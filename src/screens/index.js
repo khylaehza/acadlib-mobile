@@ -1,0 +1,12 @@
+export { default as LoginPage } from './LoginPage';
+export { default as RegisterPage } from './RegisterPage';
+export { default as HomePage } from './HomePage';
+export { default as SearchPage } from './SearchPage';
+export { default as BookmarkPage } from './BookmarkPage';
+export { default as BorrowedPage } from './BorrowedPage';
+export { default as LibraryIDPage } from './LibraryIDPage';
+export { default as BookPage } from './BookPage';
+export { default as CurBorrowedPage } from './CurBorrowedPage';
+export { default as BorrowedHistoryPage } from './BorrowedHistoryPage';
+export { default as TermsConditionPage } from './TermsConditionPage';
+export { default as ChangePassPage } from './ChangePassPage';
