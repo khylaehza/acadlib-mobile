@@ -1,10 +1,10 @@
 {
 	"expo": {
-		"name": "acadlib-mobile-v1",
-		"slug": "acadlib-mobile-v1",
+		"name": "Acadlib",
+		"slug": "acadlib-mobile",
 		"version": "1.0.0",
 		"orientation": "portrait",
-		"icon": "./assets/icon.png",
+		"icon": "./assets/logo.png",
 		"userInterfaceStyle": "light",
 		"splash": {
 			"image": "./assets/splash.png",
@@ -16,18 +16,18 @@
 		},
 		"android": {
 			"adaptiveIcon": {
-				"foregroundImage": "./assets/adaptive-icon.png",
+				"foregroundImage": "./assets/logo.png",
 				"backgroundColor": "#ffffff"
 			},
 			"permissions": ["INTERNET"],
-			"package": "com.khylaehza.acadlibmobilev1"
+			"package": "com.khylaehza1.acadlibmobile"
 		},
 		"web": {
 			"favicon": "./assets/favicon.png"
 		},
 		"extra": {
 			"eas": {
-				"projectId": "bf1cd82b-b113-4d9d-b5d6-31d88bbc894b"
+				"projectId": "ff6a4a57-e609-4f99-98f5-2eca4d020e24"
 			}
 		}
 	}

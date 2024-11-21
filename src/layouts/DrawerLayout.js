@@ -45,7 +45,11 @@ const DrawerLayout = ({ isVisible, onClose }) => {
 						}}
 					>
 						<Image
-							source={require('../../assets/icon.jpg')}
+							source={
+								curUser?.image
+									? { uri: curUser?.image }
+									: require('../../assets/icon.jpg')
+							}
 							style={{ height: 50, width: 50, borderRadius: 100 }}
 						/>
 						<View>
@@ -122,7 +126,17 @@ const DrawerLayout = ({ isVisible, onClose }) => {
 							</TouchableOpacity>
 						</View>
 					</CusAccordion>
-					<CusAccordion title='Settings'>
+					<CusAccordion title='Others'>
+						<TouchableOpacity
+							onPress={() => {
+								navigation.navigate('General');
+								onClose();
+							}}
+						>
+							<Text style={styles.contentText}>
+								General Policy
+							</Text>
+						</TouchableOpacity>
 						<TouchableOpacity
 							onPress={() => {
 								navigation.navigate('Terms');
@@ -130,7 +144,7 @@ const DrawerLayout = ({ isVisible, onClose }) => {
 							}}
 						>
 							<Text style={styles.contentText}>
-								Terms and Condition
+								Borrowing and Returning Policy
 							</Text>
 						</TouchableOpacity>
 					</CusAccordion>

@@ -113,7 +113,7 @@ const BookPage = ({ route }) => {
 								{ label: 'Author', value: book?.author },
 								{ label: 'Date Published', value: book?.date },
 								{ label: 'Edition', value: book?.edition },
-								{ label: 'Volume', value: book?.vol },
+								{ label: 'Subject', value: book?.vol },
 								{ label: 'Pages', value: book?.page },
 								{ label: 'Quantity', value: book?.qty },
 								{ label: 'Publisher', value: book?.publisher },

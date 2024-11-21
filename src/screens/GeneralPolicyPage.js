@@ -14,7 +14,7 @@ import { useState } from 'react';
 import { CusText, CusInput, CusButton } from '../shared';
 import { Ionicons, Entypo } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
-const TermsConditionPage = () => {
+const GeneralPolicyPage = () => {
 	const [drawerVisible, setDrawerVisible] = useState(false);
 	const navigation = useNavigation();
 	const { curUser, editItem } = useData();
@@ -58,50 +58,56 @@ const TermsConditionPage = () => {
 					contentContainerStyle={styles.scrollContainer}
 					showsVerticalScrollIndicator={false}
 				>
-					<Text style={styles.sectionTitle}>
-						BORROWING AND RETURNING POLICY
+					<Text style={styles.sectionTitle}>GENERAL POLICY</Text>
+					<Text style={styles.sectionText}>
+						TO ENSURE THE SAFETY USE OF THE MNHS LIBRARY, THE
+						FOLLOWING MUST BE FOLLOWED:
 					</Text>
 					<Text style={styles.sectionText}>
-						• Students may borrow 2 books at a time for 1 week.
-						Teachers/Admin may borrow a maximum of 10 books at a
-						time for 1 month.
+						• Open Monday – Friday 6:00 am to 5:00 pm, except
+						Saturday, Sunday, and Holidays
 					</Text>
 					<Text style={styles.sectionText}>
-						• No ID, No library card, No borrowing policy.
+						• Leave your bag upon entering. Secure with you or
+						valuables (cellphone, wallet, etc.)
 					</Text>
 					<Text style={styles.sectionText}>
-						• Fill in the book card properly.
-					</Text>
-					<Text style={styles.sectionText}>To return the books:</Text>
-					<Text style={styles.sectionText}>
-						- Simply present the borrower’s card for counter
-						checking and signing by the librarian.
+						• Always register on the designated log book.
 					</Text>
 					<Text style={styles.sectionText}>
-						- Be sure that the borrower’s card is countersigned
-						before leaving the library.
+						• Eating is not allowed. Drinking water is allowed,
+						except other beverages like soft drinks, milk tea, and
+						the like.
 					</Text>
 					<Text style={styles.sectionText}>
-						• Upon leaving the library, present the book/s borrowed
-						to the person assigned at the exit door.
+						• Vandalism, mutilating, and stealing library property
+						is prohibited.
 					</Text>
 					<Text style={styles.sectionText}>
-						• Students/Teachers/Admin with unreturned overdue books
-						are not allowed to borrow other books until the
-						obligation is settled.
+						• Maintain cleanliness and proper arrangement of tables
+						and chairs after use.
 					</Text>
 					<Text style={styles.sectionText}>
-						• Lost or damaged library materials must be reported
-						immediately to the library staff.
+						• Modulate your voice when talking to give respect to
+						other library users.
 					</Text>
 					<Text style={styles.sectionText}>
-						• Lost or damaged library materials must be replaced
-						with the same title, author, copyright, subject, value,
-						or function.
+						• Book/s read inside the library must return to the
+						Return Book Area.
 					</Text>
 					<Text style={styles.sectionText}>
-						• Users may renew their borrowed library materials if
-						the materials are not in demand.
+						• A public display of affection, disrespectful language,
+						and/or gestures against library personnel or in
+						authority will be dealt accordingly.
+					</Text>
+					<Text style={styles.sectionText}>
+						• Violators shall be asked to leave the premises.
+					</Text>
+					<Text style={styles.sectionText}>
+						First Offense – Verbal Warning
+					</Text>
+					<Text style={styles.sectionText}>
+						Second Offense – Report to SSG for Disciplinary Action.
 					</Text>
 				</ScrollView>
 
@@ -158,4 +164,4 @@ const styles = StyleSheet.create({
 	},
 });
 
-export default TermsConditionPage;
+export default GeneralPolicyPage;

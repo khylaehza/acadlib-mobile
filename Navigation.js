@@ -14,6 +14,7 @@ import {
 	BorrowedHistoryPage,
 	TermsConditionPage,
 	ChangePassPage,
+	GeneralPolicyPage,
 } from './src/screens';
 import { DataProvider } from './DataContext';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -77,6 +78,11 @@ const Navigation = () => {
 					<Stack.Screen
 						name='Terms'
 						component={TermsConditionPage}
+						options={{ headerShown: false }}
+					/>
+					<Stack.Screen
+						name='General'
+						component={GeneralPolicyPage}
 						options={{ headerShown: false }}
 					/>
 				</Stack.Navigator>

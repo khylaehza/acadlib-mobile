@@ -164,7 +164,7 @@ const RegisterPage = ({ navigation }) => {
 								validate: (value) =>
 									value === '' || setError('none'),
 							}}
-							autoCapitalize='words'
+							autoCapitalize='characters'
 						/>
 						<CusInput
 							placeholder={"Guardian's Name"}

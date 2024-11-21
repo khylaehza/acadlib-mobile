@@ -22,6 +22,7 @@ const LibraryIDPage = ({ navigation }) => {
 
 	const { curUser } = useData();
 
+	console.log(curUser);
 	return (
 		<LinearGradient
 			colors={['#EDFF21', '#00AE1F']}
@@ -87,9 +88,14 @@ const LibraryIDPage = ({ navigation }) => {
 					}}
 				>
 					<Image
-						source={require('../../assets/icon.jpg')}
+						source={
+							curUser?.image
+								? { uri: curUser?.image }
+								: require('../../assets/icon.jpg')
+						}
 						style={{ height: 130, width: 130, borderRadius: 5 }}
 					/>
+
 					<CusText text={'STUDENT'} />
 				</View>
 				<View

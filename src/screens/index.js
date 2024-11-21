@@ -10,3 +10,4 @@ export { default as CurBorrowedPage } from './CurBorrowedPage';
 export { default as BorrowedHistoryPage } from './BorrowedHistoryPage';
 export { default as TermsConditionPage } from './TermsConditionPage';
 export { default as ChangePassPage } from './ChangePassPage';
+export { default as GeneralPolicyPage } from './GeneralPolicyPage';
