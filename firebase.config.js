@@ -1,15 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
+
 const firebaseConfig = {
-	apiKey: 'AIzaSyBRubJH9qibs4vWTGv0IUHe1fZwVbm-fAc',
-	authDomain: 'acadlib-95b51.firebaseapp.com',
-	databaseURL:
-		'https://acadlib-95b51-default-rtdb.asia-southeast1.firebasedatabase.app',
-	projectId: 'acadlib-95b51',
-	storageBucket: 'acadlib-95b51.appspot.com',
-	messagingSenderId: '301841526489',
-	appId: '1:301841526489:web:b73d5b9e62e1ee0e6bd8c8',
-	measurementId: 'G-Y286FMZR4X',
+	apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+	authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+	databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
+	projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_FIREBASE_APP_ID,
+	measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
